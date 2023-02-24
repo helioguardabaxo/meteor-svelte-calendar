@@ -1,0 +1,23 @@
+<head>
+  <title>meteor-svelte-calendar</title>
+</head>
+
+<body>
+  <h1>Meteor + Blaze with Svelte Calendar component!</h1>
+
+  {{> MyTemplate}}
+  {{> Calendar}}
+
+</body>
+
+
+<template name="MyTemplate">
+  <h2>Svelte</h2>
+  {{> SvelteComponent this=MyComponent first="Hello" second="world"}}
+</template>
+
+
+<template name="Calendar">
+  <h2>Calendar</h2>
+  {{> SvelteComponent this=Calendar}}
+</template>
